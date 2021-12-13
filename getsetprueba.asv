@@ -1,0 +1,14 @@
+user = 'root';
+password = '12345';
+dbname = 'lector';
+driver = 'Mysql';
+hots = 'localhost';
+
+
+conexion = database(dbname, user, password, 'Vendor', driver, 'Sever', host);
+consulta = select * from datoslector*;
+resconsulta = exec(conecion, consulta);
+resconsulta = fetch(resconsulta);
+datos=resconsulta.Data;
+
+disp(['num de resconsulta: ' num2str(length)])
